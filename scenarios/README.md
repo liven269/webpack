@@ -4,7 +4,7 @@ This folder contains test scenarios for the automated tests of the template on C
 
 Each `.json`file contains an object that represents a set of answers to the questions that vue-cli asks the user when installing the template.
 
-With the code from `index.js`, we insert those answers into the metalsmith metadata and skip the inquirer questions, thus allowing us to run different test scenarios in CI without having to actually provide any answers to inquirer or to mock it.
+With the code from `user.js`, we insert those answers into the metalsmith metadata and skip the inquirer questions, thus allowing us to run different test scenarios in CI without having to actually provide any answers to inquirer or to mock it.
 
 ## The scenarios
 

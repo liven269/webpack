@@ -32,7 +32,7 @@ Chai and Sinon are integrated using [karma-sinon-chai](https://github.com/kmees/
 
 ### Files
 
-- `index.js`
+- `user.js`
 
   This is the entry file used by `karma-webpack` to bundle all the test code and source code (for coverage purposes). You can ignore it for the most part.
 

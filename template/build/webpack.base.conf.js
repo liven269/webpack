@@ -31,6 +31,9 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+	externals: {
+		'chj-ops-common': 'ChjOpsCommon'
+	},
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {

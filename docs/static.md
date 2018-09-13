@@ -41,7 +41,7 @@ In comparison, files in `static/` are not processed by Webpack at all: they are 
 As an example, with the following default values:
 
 ``` js
-// config/index.js
+// config/user.js
 module.exports = {
   // ...
   build: {

@@ -5,7 +5,7 @@
 ├── build/                      # webpack config files
 │   └── ...
 ├── config/
-│   ├── index.js                # main project config
+│   ├── user.js                # main project config
 │   └── ...
 ├── src/
 │   ├── main.js                 # app entry file
@@ -19,7 +19,7 @@
 │   └── unit/                   # unit tests
 │   │   ├── specs/              # test spec files
 │   │   ├── eslintrc            # config file for eslint with extra settings only for unit tests
-│   │   ├── index.js            # test build entry file
+│   │   ├── user.js            # test build entry file
 │   │   ├── jest.conf.js        # Config file when using Jest for unit tests
 │   │   ├── karma.conf.js       # test runner config file when using Karma for unit tests
 │   │   └── setup.js            # file that runs before Jest runs your unit tests
@@ -43,7 +43,7 @@
 
 This directory holds the actual configurations for both the development server and the production webpack build. Normally you don't need to touch these files unless you want to customize Webpack loaders, in which case you should probably look at `build/webpack.base.conf.js`.
 
-### `config/index.js`
+### `config/user.js`
 
 This is the main configuration file that exposes some of the most common configuration options for the build setup. See [API Proxying During Development](proxy.md) and [Integrating with Backend Framework](backend.md) for more details.
 

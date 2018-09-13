@@ -7,8 +7,18 @@ import App from './App'
 {{#router}}
 import router from './router'
 {{/router}}
-
+{{#vuex}}
+import Vuex from 'vuex'
+import store from './store'
+{{/vuex}}
 Vue.config.productionTip = false
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import ChjOpsCommon from 'chj-ops-common'
+import './styles/reset.css'
+Vue.use(ElementUI);
+Vue.use(ChjOpsCommon);
 
 /* eslint-disable no-new */
 new Vue({
@@ -16,6 +26,9 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
+  {{#vuex}}
+	store,
+  {{/vuex}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
