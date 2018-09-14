@@ -13,6 +13,7 @@ import store from './store'
 {{/vuex}}
 Vue.config.productionTip = false
 
+import './mock'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import ChjOpsCommon from 'chj-ops-common'
